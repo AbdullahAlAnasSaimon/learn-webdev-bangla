@@ -17,9 +17,9 @@ body{
   top: 6rem;
   max-height: calc(100vh - 6rem);
 }
-.main-content{
+/* .main-content{
   width: 60%;
-}
+} */
 
 
 .toc-list-styles{
