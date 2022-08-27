@@ -1,0 +1,30 @@
+body{
+  font-family: Hind Siliguri;
+}
+
+.header-top{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+.related-topic, .toc{
+  width: 20%;
+  overflow-y: scroll;
+  position: sticky;
+  top: 6rem;
+  max-height: calc(100vh - 6rem);
+}
+.main-content{
+  width: 60%;
+}
+
+
+.toc-list-styles{
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2432;
+  padding: 3px 0px;
+}
