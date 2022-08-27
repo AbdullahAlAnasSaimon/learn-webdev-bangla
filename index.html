@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://fonts.googleapis.com/css?family=Hind Siliguri' rel='stylesheet'>
+  <title>Learn Javascript</title>
+</head>
+<body>
+  <style>
+    body{
+      font-family: Hind Siliguri;
+    }
+    .bg-img{
+      background-image: url('images/logo2.png');
+      background-size: 150px, 150px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .banner-logo-circle{
+      position: relative;
+      width: 360px;
+      height: 360px;
+    }
+    @keyframes hero-logo-circle{
+      100%{
+        transform: rotate(1turn);
+      }
+    }
+    .hero-logo-circle:nth-child(1) {
+    animation-duration: 30s;
+    }
+    .hero-logo-circle:nth-child(2) {
+    animation-duration: 40s;
+    }
+    .hero-logo-circle:nth-child(3) {
+    animation-duration: 50s;
+    }
+    .hero-logo-circle:nth-child(4) {
+    animation-duration: 60s;
+    }
+    .hero-logo-circle:nth-child(5) {
+    animation-duration: 70s;
+    }
+    .hero-logo-circle:nth-child(6) {
+    animation-duration: 80s;
+    }
+    .hero-logo-circle:nth-child(7) {
+    animation-duration: 90s;
+    }
+    .hero-logo-circle:nth-child(8) {
+    animation-duration: 100s;
+    }
+    .hero-logo-circle:nth-child(9) {
+    animation-duration: 110s;
+    }
+    .hero-logo-circle{
+      position: absolute;
+      left: 0;
+      top: 0;
+      animation: hero-logo-circle 1s linear infinite;
+      will-change: transform;
+    }
+  </style>
+  <!-- header start -->
+  <header>
+    <!-- top header -->
+    <div class="bg-white">
+      <div class="flex justify-between items-center w-11/12 mx-auto py-4">
+        <div >
+          <a href="index.html" class="flex items-center">
+            <img class="w-12" src="images/logo.png" alt="logo">
+            <h2 class="font-semibold pl-4 text-2xl text-gray-700">ওয়েব ডেভেলপমেন্ট</h2>
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/AbdullahAlAnasSaimon" target="_blank"><i class="fa-brands fa-github text-2xl text-gray-700"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+    <section id="banner">
+      <div class="w-11/12 mx-auto h-96 flex">
+        <div class="flex flex-col w-5/12 h-80 justify-center">
+          <h1 class="text-6xl font-bold mb-4 text-gray-700">জাভাস্ক্রিপ্ট শিখুন</h1>
+          <h5 class="text-lg">সম্পূর্ণ বাংলায় আনাস এর সাথে</h5>
+        </div>
+        <div class="flex items-center mx-auto">
+          <div class="bg-img">
+            <div class="banner-logo-circle">
+              <img class="hero-logo-circle" src="images/inside-1.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-2.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-3.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-4.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-5.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-6.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-7.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-8.svg" alt="">
+              <img class="hero-logo-circle" src="images/inside-9.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <section id="milestone" class="mt-20">
+      <div class="grid grid-cols-3 gap-10 w-10/12 mx-auto">
+        <a href="#" class="border-2 border-slate-700 p-4 text-xl font-bold rounded-md text-slate-700 bg-blue-200">মাইলস্টোন ১ঃ পারসোনাল পোর্টফোলিও</a>
+        <a href="#" class="border-2 border-slate-700 p-4 text-xl font-bold rounded-md text-slate-700 bg-blue-200">মাইলস্টোন ২ঃ রেসপন্সিভ ওয়েব লেআউট</a>
+        <a href="#" class="border-2 border-slate-700 p-4 text-xl font-bold rounded-md text-slate-700 bg-blue-200">মাইলস্টোন ৩ঃ সিএসএস ফ্রেমওয়ার্ক</a>
+        <a href="#" class="border-2 border-slate-700 p-4 text-xl font-bold rounded-md text-slate-700 bg-blue-200">মাইলস্টোন ৪ঃ হ্যালো জাভাস্ক্রিপ্ট</a>
+        <a href="#" class="border-2 border-slate-700 p-4 text-xl font-bold rounded-md text-slate-700 bg-blue-200">মাইলস্টোন ৫ঃ ইন্ট্রিগ্রেটেড জাভাস্ক্রিপ্ট</a>
+        <a href="milestone-6/module-30.html" class="border-2 border-slate-700 p-4 text-xl font-bold rounded-md text-slate-700 bg-blue-200">মাইলস্টোন ৬ঃ ইন্টারমিডিয়েট জাভাস্ক্রিপ্ট এবং এপিআই</a>
+      </div>
+    </section>
+  </main>
+  <!-- main end -->
+
+  <!-- footer start -->
+  <footer class="bg-slate-800 mt-20 p-4 pt-12 border-t-2 border-gray-700">
+    <div class="grid grid-cols-4 gap-10 text-white w-11/12 mx-auto">
+      <div>
+        <a href="index.html" class="inline-block"><img src="images/logo2.png" alt="" class="w-20"></a>
+
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold pb-2 text-white">শিখুন</h3>
+        <ul>
+          <li><a href="#">এইচটিএমএল</a></li>
+          <li><a href="#">সিএসএস</a></li>
+          <li><a href="#">জাভাস্ক্রিপ্ট</a></li>
+          <li><a href="#">নোড জেএস</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold pb-2 text-white">রিসোর্স</h3>
+        <ul>
+          <li><a href="#">এমডি এন ডকুমেন্ট</a></li>
+          <li><a href="#">ডাব্লিউ থ্রি স্কুল</a></li>
+          <li><a href="#">ইউটিউব</a></li>
+          <li><a href="#">ইউডেমি</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold pb-2 text-white">সম্পর্কে</h3>
+        <p>প্রোজেক্টটি সম্পূর্ণ সোর্স কোডসহ গিটহাবে রয়েছে। আপনার ভালো লেগে থাকলে স্টার দিয়ে আসবেন। আপনার পরামর্শ, মন্তব্য এবং ভুলত্রুটি গিটহাবে ইস্যু করে দেওয়ার জন্যে অনুরোধ থাকলো</p>
+      </div>
+    </div>
+    <p class="text-center py-4 text-white">সর্ব স্বত্ব &copy; ২০২২ ওয়েব ডেভেলপমেন্ট</p>
+  </footer>
+  <!-- footer end -->
+
+  <!-- font awesome kits -->
+  <script src="https://kit.fontawesome.com/800e7af9df.js" crossorigin="anonymous"></script>
+</body>
+</html>
