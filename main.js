@@ -31,3 +31,9 @@ function milestoneFive() {
 function milestoneSix() {
   takeElementsById("nested-dropdown6");
 }
+const className = document.getElementsByClassName('dropdown-list');
+for(const nam of className){
+  nam.addEventListener('load', function(){
+    console.log('clicked');
+  })
+}

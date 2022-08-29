@@ -15,7 +15,7 @@
     src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
     crossorigin="anonymous"></script>
-  <title>Learn Javascript</title>
+  <title>Learn Web Development</title>
 </head>
 <body>
    <header class="header-top">
@@ -27,10 +27,10 @@
    <!-- main start -->
    <main>
     <div class="flex gap-10 w-full px-4">
-      <div class="related-topic" id="topics">
+      <div class="related-topic hidden md:block md:w-4/12 lg:w-3/12" id="topics">
         
       </div>
-      <div class="main-content mb-20 px-12">
+      <div class="main-content mb-20 px-8 md:px-0 lg:px-8 w-full md:w-8/12 lg:w-8/12 mx-auto">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor dolorum officiis error rem iure fugit autem iste corrupti harum odit aperiam ipsam hic reprehenderit commodi illum maiores doloremque vitae, esse nihil. Itaque esse pariatur, eaque est alias, vitae inventore nostrum qui ut exercitationem non veritatis temporibus similique nisi, id saepe maiores. Ipsam fugit libero sit odit aperiam laborum ea labore, temporibus numquam laudantium, architecto quidem incidunt assumenda accusamus veritatis facere nobis debitis necessitatibus. Quae inventore optio, reiciendis amet corporis dolores itaque iure nihil iusto velit quod ipsa atque, voluptatum corrupti minima consequuntur sint? Ratione impedit maiores modi earum facilis.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor dolorum officiis error rem iure fugit autem iste corrupti harum odit aperiam ipsam hic reprehenderit commodi illum maiores doloremque vitae, esse nihil. Itaque esse pariatur, eaque est alias, vitae inventore nostrum qui ut exercitationem non veritatis temporibus similique nisi, id saepe maiores. Ipsam fugit libero sit odit aperiam laborum ea labore, temporibus numquam laudantium, architecto quidem incidunt assumenda accusamus veritatis facere nobis debitis necessitatibus. Quae inventore optio, reiciendis amet corporis dolores itaque iure nihil iusto velit quod ipsa atque, voluptatum corrupti minima consequuntur sint? Ratione impedit maiores modi earum facilis.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor dolorum officiis error rem iure fugit autem iste corrupti harum odit aperiam ipsam hic reprehenderit commodi illum maiores doloremque vitae, esse nihil. Itaque esse pariatur, eaque est alias, vitae inventore nostrum qui ut exercitationem non veritatis temporibus similique nisi, id saepe maiores. Ipsam fugit libero sit odit aperiam laborum ea labore, temporibus numquam laudantium, architecto quidem incidunt assumenda accusamus veritatis facere nobis debitis necessitatibus. Quae inventore optio, reiciendis amet corporis dolores itaque iure nihil iusto velit quod ipsa atque, voluptatum corrupti minima consequuntur sint? Ratione impedit maiores modi earum facilis.
@@ -40,11 +40,18 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor dolorum officiis error rem iure fugit autem iste corrupti harum odit aperiam ipsam hic reprehenderit commodi illum maiores doloremque vitae, esse nihil. Itaque esse pariatur, eaque est alias, vitae inventore nostrum qui ut exercitationem non veritatis temporibus similique nisi, id saepe maiores. Ipsam fugit libero sit odit aperiam laborum ea labore, temporibus numquam laudantium, architecto quidem incidunt assumenda accusamus veritatis facere nobis debitis necessitatibus. Quae inventore optio, reiciendis amet corporis dolores itaque iure nihil iusto velit quod ipsa atque, voluptatum corrupti minima consequuntur sint? Ratione impedit maiores modi earum facilis.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor dolorum officiis error rem iure fugit autem iste corrupti harum odit aperiam ipsam hic reprehenderit commodi illum maiores doloremque vitae, esse nihil. Itaque esse pariatur, eaque est alias, vitae inventore nostrum qui ut exercitationem non veritatis temporibus similique nisi, id saepe maiores. Ipsam fugit libero sit odit aperiam laborum ea labore, temporibus numquam laudantium, architecto quidem incidunt assumenda accusamus veritatis facere nobis debitis necessitatibus. Quae inventore optio, reiciendis amet corporis dolores itaque iure nihil iusto velit quod ipsa atque, voluptatum corrupti minima consequuntur sint? Ratione impedit maiores modi earum facilis.
       </div>
-      <div class="toc">
-        <h2>On this page</h2>
-        <ol>
-          <li class="toc-list-styles">How does internet works and what is an api</li>
-          <li class="toc-list-styles">Intro to JSON, JSON structure, parse, stringify</li>
+      <div class="toc hidden lg:block lg:w-3/12">
+        <h2 class="text-2xl font-bold mb-6 text-slate-700">On this page</h2>
+        <ol class="list-disc ml-4">
+          <li class="toc-list-styles"><a href="#">কীভাবে ইন্টারনেট কাজ করে এবং এপিআই কি?</a></li>
+          <li class="toc-list-styles"><a href="#">ইনট্রো টু জেসন, জেসন স্ট্রাকচার, পার্স, স্ট্রিংগিফাই</a></li>
+          <li class="toc-list-styles"><a href="#">জেসন প্লেসহোল্ডার, গেট ডাটা, ডিসপ্লে ডাতা অন ইউআই</a></li>
+          <li class="toc-list-styles"><a href="#">লোড মোর ডাটা, মোর এপিআই'স, সেন্ড ডাটা টু ফাংশন</a></li>
+          <li class="toc-list-styles"><a href="#">ডাইনামিক্যালি ডিসপ্লে লোডেড ডাটা অন ওয়েবসাইট</a></li>
+          <li class="toc-list-styles"><a href="#">লোড পোস্টস এন্ড ডিসপ্লে অন দি ওয়েবসাইট উইথ সিএসএস</a></li>
+          <li class="toc-list-styles"><a href="#">GET, POST, PATCH, DELETE CRUD, GET VS POST</a></li>
+          <li class="toc-list-styles"><a href="#">ডিবাগ এপিআই, নেটওয়ার্ক ট্যাব, স্ট্যাটাস কোড, হেডারস, ব্যাড এপিআই</a></li>
+          <li class="toc-list-styles"><a href="#">মডিউল সামারি</a></li>
         </ol>
       </div>
     </div>
