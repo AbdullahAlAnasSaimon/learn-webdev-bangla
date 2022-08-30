@@ -1,3 +1,13 @@
+function myFunction() {
+  let x = document.getElementById("dropdown-container");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 // common function for show/hide nested dropdown
 function takeElementsById(elementId){
   let milestone = document.getElementById(elementId);
@@ -5,6 +15,15 @@ function takeElementsById(elementId){
     milestone.style.display = "none";
   } else {
     milestone.style.display = "block";
+    let modules = milestone.getElementsByClassName('dropdown-list');
+    const currentLocation = location.href;
+    // console.log(modules);
+    for(const module of modules){
+      // console.log(module);
+      if(module.href === currentLocation){
+        module.className = 'active';
+      }
+    }
   }
 }
 

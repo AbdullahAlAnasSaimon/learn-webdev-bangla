@@ -1,4 +1,5 @@
-<h1 class="text-2xl font-bold mb-6 text-slate-700">Related Topics</h1>
+<div id="dropdown-container" class="drop-container">
+  <h1 class="text-2xl font-bold mb-6 text-slate-700">Related Topics</h1>
         <ul id="dropdown">
           <li><a href="#" onclick="milestoneOne()" class="text-xl font-semibold bg-gray-200 block p-2 text-slate-700">মাইলস্টোন ১ঃ পারসোনাল পোর্টফোলিও <i class="fa-solid fa-angle-down"></i></a>
             <ul id="nested-dropdown1">
@@ -45,12 +46,12 @@
           </li>
           <li><a href="#" onclick="milestoneFive()" class="text-xl font-semibold bg-gray-200 block p-2 text-slate-700">মাইলস্টোন ৫ঃ ইন্টারেকটিভ জাভাস্ক্রিপ্ট <i class="fa-solid fa-angle-down"></i></a>
             <ul id="nested-dropdown5">
-              <li><a href="#" class="dropdown-list">মডিউল ২৪ঃ ট্যুর অব ডম (ডকুমেন্ট অবজেক্ট মডেল)</a></li>
-              <li><a href="#" class="dropdown-list">মডিউল ২৫ঃ ইভেন্ট, অ্যাডইভেন্টলিসেনার, ইভেন্ট বাবল</a></li>
-              <li><a href="#" class="dropdown-list">মডিউল ২৬ঃ সিম্পল ইন্টারেকটিভ ব্যাংক ওয়েবসাইট (বাপের ব্যাংক)</a></li>
-              <li><a href="#" class="dropdown-list">মডিউল ২৭ঃ ব্যাংক ক্যালকুলেশন ইউসিং ফাংশন</a></li>
-              <li><a href="#" class="dropdown-list">মডিউল ২৮ঃ শপিং কার্ট এন্ড পিন ম্যাচার</a></li>
-              <li><a href="#" class="dropdown-list">মডিউল ২৯ঃ মানি মাষ্টার ডম এন্ড জাভাস্ক্রিপ্ট এসাইনমেন্ট</a></li>
+              <li><a href="module-24.html" class="dropdown-list">মডিউল ২৪ঃ ট্যুর অব ডম (ডকুমেন্ট অবজেক্ট মডেল)</a></li>
+              <li><a href="module-25.html" class="dropdown-list">মডিউল ২৫ঃ ইভেন্ট, অ্যাডইভেন্টলিসেনার, ইভেন্ট বাবল</a></li>
+              <li><a href="module-26.html" class="dropdown-list">মডিউল ২৬ঃ সিম্পল ইন্টারেকটিভ ব্যাংক ওয়েবসাইট (বাপের ব্যাংক)</a></li>
+              <li><a href="module-27.html" class="dropdown-list">মডিউল ২৭ঃ ব্যাংক ক্যালকুলেশন ইউসিং ফাংশন</a></li>
+              <li><a href="module-28.html" class="dropdown-list">মডিউল ২৮ঃ শপিং কার্ট এন্ড পিন ম্যাচার</a></li>
+              <li><a href="module-29.html" class="dropdown-list">মডিউল ২৯ঃ মানি মাষ্টার ডম এন্ড জাভাস্ক্রিপ্ট এসাইনমেন্ট</a></li>
             </ul>
           </li>
           <li id="milestone-6"><a href="#" onclick="milestoneSix()" class="text-xl font-semibold bg-gray-200 block p-2 text-slate-700">মাইলস্টোন ৬ঃ ইন্টারমিডিয়েট জাভাস্ক্রিপ্ট, এপিআই <i class="fa-solid fa-angle-down"></i></a>
@@ -58,15 +59,18 @@
               <li><a href="module-30.html" class="dropdown-list">মডিউল ৩০ঃ জেএস রিক্যাপ এন্ড বেসিক ইএস৬, ইস২০১৫</a></li>
               <li><a href="module-31.html" class="dropdown-list">মডিউল ৩১ঃ (এডভান্সড) ইএস৬, ক্লাস, ইনহেরিট্যান্স</a></li>
               <li><a href="module-32.html" class="dropdown-list">মডিউল ৩২ঃ এপিআই, জেসন, ডাটা লোড, ডাইনামিক ওয়েবসাইট</a></li>
+              <li><a href="module-33.html" class="dropdown-list">মডিউল ৩৩ঃ এপিআই এক্সাম্পলস এন্ড এজ কেসেস</a></li>
+              <li><a href="module-34.html" class="dropdown-list">মডিউল ৩৪ঃ এপিআই রিকেপ উইথ ফোন হান্টার</a></li>
+              <li><a href="module-35.html" class="dropdown-list">মডিউল ৩৫ঃ (এডভান্সড) মাষ্টারিং ইন জাভাস্ক্রিপ্ট অবজেক্ট</a></li>
             </ul>
           </li>
         </ul>
 
+</div>
 
 <style>
   .dropdown-list{
     padding: 5px 10px;
-    font-size: 16px;
     display: block;
     font-weight: bold;
     color: #0a0f36;
@@ -74,8 +78,16 @@
   #nested-dropdown1, #nested-dropdown2, #nested-dropdown3, #nested-dropdown4, #nested-dropdown5, #nested-dropdown6{
     display: none;
   }
-  .active{
-    background-color: #cdd2ffd4;
+  ul li a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 16px;
+  }
+  ul li a.active{
+    background-color: #e0e8f9;
   }
 </style>
 
